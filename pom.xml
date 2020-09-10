@@ -43,7 +43,6 @@
     <developerConnection>
       scm:git:https://github.com/neculai-stanciu/giss.git
     </developerConnection>
-    <tag>HEAD</tag>
   </scm>
 
   <dependencies>
