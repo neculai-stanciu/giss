@@ -10,9 +10,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v1
       - name: Set up JDK 11
@@ -23,9 +21,7 @@ jobs:
         run: mvn --file pom.xml package
 
   deploy:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Set up JDK 11
@@ -36,4 +32,4 @@ jobs:
       env:
         GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: mvn --settings settings.xml --file pom.xml deploy
+      run: mvn deploy
