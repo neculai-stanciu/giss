@@ -1,0 +1,5 @@
+profile: cli
+defaultPackage: ro.nstanciu
+---
+testFramework: junit
+sourceLanguage: java
