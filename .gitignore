@@ -12,3 +12,5 @@ out/
 .settings
 .classpath
 .vscode
+pom.xml.releaseBackup
+release.properties
