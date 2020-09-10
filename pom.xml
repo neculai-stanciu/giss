@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ro.nstanciu</groupId>
   <artifactId>giss</artifactId>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.2</version>
   <properties>
     <jdk.version>11</jdk.version>
     <release.version>11</release.version>
@@ -43,7 +43,7 @@
     <developerConnection>
       scm:git:https://github.com/neculai-stanciu/giss.git
     </developerConnection>
-    <tag>HEAD</tag>
+    <tag>giss-0.2</tag>
   </scm>
 
   <dependencies>
