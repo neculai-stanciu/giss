@@ -21,7 +21,17 @@
     <exec.mainClass>ro.nstanciu.GissCommand</exec.mainClass>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
+    <!-- Use server github -->
+    <project.scm.id>github</project.scm.id>
   </properties>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>Github</name>
+      <url>https://maven.pkg.github.com/neculai-stanciu/giss</url>
+    </repository>
+  </distributionManagement>
 
   <repositories>
     <repository>
@@ -29,6 +39,11 @@
       <url>https://jcenter.bintray.com</url>
     </repository>
   </repositories>
+  <scm>
+    <developerConnection>
+      scm:git:https://github.com/neculai-stanciu/giss.git
+    </developerConnection>
+  </scm>
 
   <dependencies>
     <dependency>
