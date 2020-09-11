@@ -17,6 +17,11 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
+          server-id: github
+      - name: Configure Git user
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
       - name: Maven build
         run: mvn --file pom.xml package
 
@@ -28,6 +33,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
+        server-id: github
     - name: Deploy to Github Package Registry
       env:
         GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
